@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tabela-section {
+    margin-bottom: 40px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ff6b35;
+}
+
+caption {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* TABELA 1: Dados */
+.tabela-dados {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-dados thead {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.tabela-dados thead th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+    border: 2px solid #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.tabela-dados tbody tr:nth-child(odd) {
+    background-color: #fff9f5;
+}
+
+.tabela-dados tbody tr:nth-child(even) {
+    background-color: #ffe8d6;
+}
+
+.tabela-dados tbody td {
+    padding: 15px;
+    border: 2px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+    height: 40px;
+}
+
+.tabela-dados tbody tr:hover {
+    background-color: #ffcdb2;
+}
+
+/* TABELA 2: Rotina Semanal */
+.tabela-rotina {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-rotina thead {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.tabela-rotina thead th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.tabela-rotina thead th.horario {
+    text-align: left;
+}
+
+.tabela-rotina tbody tr:nth-child(odd) {
+    background-color: #fff9f5;
+}
+
+.tabela-rotina tbody tr:nth-child(even) {
+    background-color: #ffe8d6;
+}
+
+.tabela-rotina tbody td {
+    padding: 15px;
+    border: 2px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+    height: 50px;
+}
+
+.tabela-rotina tbody td.periodo {
+    background-color: #ff6b35;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tabela-rotina tbody tr:hover {
+    background-color: #ffcdb2;
+}
+
+/* Classes para status */
+.ativo {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.inativo {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .tabela-section {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .tabela-dados thead th,
+    .tabela-rotina thead th {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .tabela-dados tbody td,
+    .tabela-rotina tbody td {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
